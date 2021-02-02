@@ -28,8 +28,17 @@ print("F - Fahrenheit")
 let convertTo = String.collectInput(withPrompt: "Please enter your selection: ", acceptableValues: ["C", "F"])
 
 let startingTemp = Double.collectInput(withPrompt: "Enter the temperature to be converted: ",
-                           minimum: 0,
+                           minimum: nil,
                            maximum: nil)
-
-switch 
+//process and output
+switch convertTo {
+case "C":
+    let convertedTemp = convertToCelsius(startingTemp: startingTemp)
+    print("\(startingTemp)° F  is equal to \(convertedTemp)° C")
+case "F":
+    let convertedTemp = convertToFahrenheit(startingTemp: startingTemp)
+    print("\(startingTemp)° C  is equal to \(convertedTemp)° F")
+default:
+    break
+}
 
