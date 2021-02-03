@@ -6,12 +6,12 @@
 //
 
 import Foundation
+print("Temperature Converter")
+print("=====================")
 while true{
     var celsiusTemp = 0.0
     var convertedTemp = 0.0
     //input
-    print("Temperature Converter")
-    print("=====================")
     print ("What temperature system would you like to convert from?")
     print("C - Celsius")
     print("F - Fahrenheit")
@@ -28,8 +28,8 @@ while true{
     print ("Q- Quit temperature converter")
     let endSystem = String.collectInput(withPrompt: "Please enter your selection: ", acceptableValues: ["C", "F", "K", "Q"])
     if startingSystem == "Q" {
-        exit (0)
-    let startTemp = Double.collectInput(withPrompt: "What temperature would you like to convert?", minimum: nil, maximum: nil)
+        exit (0)}
+    let startTemp = Double.collectInput(withPrompt: "What temperature would you like to convert? ", minimum: nil, maximum: nil)
     
     switch startingSystem{
     case "C": celsiusTemp = startTemp
@@ -47,4 +47,5 @@ while true{
     default:
         break
     }
+    print("====================")
 }
