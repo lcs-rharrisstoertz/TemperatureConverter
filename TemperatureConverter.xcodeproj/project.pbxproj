@@ -9,10 +9,21 @@
 /* Begin PBXBuildFile section */
 		25652F7E25C9E61600A43A75 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F7D25C9E61600A43A75 /* main.swift */; };
 		25652F8625C9E64800A43A75 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F8525C9E64800A43A75 /* Extension.swift */; };
+		25652F8F25CB0C2B00A43A75 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F8E25CB0C2A00A43A75 /* Functions.swift */; };
+		25652F9825CB0D0500A43A75 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F9725CB0D0500A43A75 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		25652F7825C9E61600A43A75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		25652F9325CB0D0400A43A75 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,10 +38,20 @@
 		25652F7A25C9E61600A43A75 /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		25652F7D25C9E61600A43A75 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		25652F8525C9E64800A43A75 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		25652F8E25CB0C2A00A43A75 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		25652F9525CB0D0400A43A75 /* Knitting Gauge Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Knitting Gauge Calculator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25652F9725CB0D0500A43A75 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		25652F7725C9E61600A43A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25652F9225CB0D0400A43A75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,8 +64,10 @@
 		25652F7125C9E61500A43A75 = {
 			isa = PBXGroup;
 			children = (
+				25652F8E25CB0C2A00A43A75 /* Functions.swift */,
 				25652F8525C9E64800A43A75 /* Extension.swift */,
 				25652F7C25C9E61600A43A75 /* TemperatureConverter */,
+				25652F9625CB0D0500A43A75 /* Knitting Gauge Converter */,
 				25652F7B25C9E61600A43A75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				25652F7A25C9E61600A43A75 /* TemperatureConverter */,
+				25652F9525CB0D0400A43A75 /* Knitting Gauge Calculator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +87,14 @@
 				25652F7D25C9E61600A43A75 /* main.swift */,
 			);
 			path = TemperatureConverter;
+			sourceTree = "<group>";
+		};
+		25652F9625CB0D0500A43A75 /* Knitting Gauge Converter */ = {
+			isa = PBXGroup;
+			children = (
+				25652F9725CB0D0500A43A75 /* main.swift */,
+			);
+			path = "Knitting Gauge Converter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +117,23 @@
 			productReference = 25652F7A25C9E61600A43A75 /* TemperatureConverter */;
 			productType = "com.apple.product-type.tool";
 		};
+		25652F9425CB0D0400A43A75 /* Knitting Gauge Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25652F9925CB0D0500A43A75 /* Build configuration list for PBXNativeTarget "Knitting Gauge Calculator" */;
+			buildPhases = (
+				25652F9125CB0D0400A43A75 /* Sources */,
+				25652F9225CB0D0400A43A75 /* Frameworks */,
+				25652F9325CB0D0400A43A75 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Knitting Gauge Calculator";
+			productName = "Knitting Gauge Calculator";
+			productReference = 25652F9525CB0D0400A43A75 /* Knitting Gauge Calculator */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +144,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					25652F7925C9E61600A43A75 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					25652F9425CB0D0400A43A75 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -113,6 +165,7 @@
 			projectRoot = "";
 			targets = (
 				25652F7925C9E61600A43A75 /* TemperatureConverter */,
+				25652F9425CB0D0400A43A75 /* Knitting Gauge Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +177,15 @@
 			files = (
 				25652F7E25C9E61600A43A75 /* main.swift in Sources */,
 				25652F8625C9E64800A43A75 /* Extension.swift in Sources */,
+				25652F8F25CB0C2B00A43A75 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25652F9125CB0D0400A43A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25652F9825CB0D0500A43A75 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +329,30 @@
 			};
 			name = Release;
 		};
+		25652F9A25CB0D0500A43A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Extension.swift Functions.swift";
+				DEVELOPMENT_TEAM = W4R3WPMQ2T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		25652F9B25CB0D0500A43A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Extension.swift Functions.swift";
+				DEVELOPMENT_TEAM = W4R3WPMQ2T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +370,15 @@
 			buildConfigurations = (
 				25652F8225C9E61600A43A75 /* Debug */,
 				25652F8325C9E61600A43A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25652F9925CB0D0500A43A75 /* Build configuration list for PBXNativeTarget "Knitting Gauge Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25652F9A25CB0D0500A43A75 /* Debug */,
+				25652F9B25CB0D0500A43A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
