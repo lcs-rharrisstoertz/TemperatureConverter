@@ -6,7 +6,10 @@
 //
 
 import Foundation
-var CMDistance = 0.0
+var CMWidth = 0.0
+var CMLength = 0.0
+convertedLength = 0.0
+convertedWidth = 0.0
 
 print("Knitting Gauge Converter")
 print("========================")
@@ -39,9 +42,31 @@ let finalLength = Double.collectInput(withPrompt: "How many units long would you
 let finalWidth = Double.collectInput(withPrompt: "How many units wide would you like your completed project to be? ", minimum: 0, maximum: nil)
 
 switch startingUnit{
-case "1": CMDistance = inches
-case "2":
-case "3":
-case "4":
+case "1": CMLength = inchesToCentimeters(startingDistance: swatchLength)
+case "2": CMLength = feetToCentimeters(startingDistance: swatchLength)
+case "3": CMLength = swatchLength
+case "4": CMLength = millimetersToCentimeters(startingDistance: swatchLength)
 default:
-    break
+    break}
+switch endingUnit{
+case "1": convertedLength = centimetersToInches(startingDistance: CMLength)
+case "2": convertedLength = centimetersToFeet(startingDistance: CMLength)
+case "3": convertedLength = swatchLength
+case "4": convertedLength = centimetersToMillimeters(startingDistance: CMLength)
+default:
+    break}
+
+switch startingUnit{
+case "1": CMWidth = inchesToCentimeters(startingDistance: swatchWidth)
+case "2": CMWidth = feetToCentimeters(startingDistance: swatchWidth)
+case "3": CMWidth = swatchWidth
+case "4": CMWidth = millimetersToCentimeters(startingDistance: swatchWidth)
+default:
+    break}
+switch endingUnit{
+case "1": convertedWidth = centimetersToInches(startingDistance: CMWidth)
+case "2": convertedWidth = centimetersToFeet(startingDistance: CMWidth)
+case "3": convertedWidth = swatchWidth
+case "4": convertedWidth = centimetersToMillimeters(startingDistance: CMWidth)
+default:
+    break}
