@@ -78,3 +78,4 @@ func centimetersToFeet(CMDistance: Double) -> Double {
 func centimetersToMillimeters(CMDistance: Double) -> Double {
     return (CMDistance * 10.0)
 }
+
