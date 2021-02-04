@@ -333,7 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Extension.swift Functions.swift";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = W4R3WPMQ2T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,7 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Extension.swift Functions.swift";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = W4R3WPMQ2T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
