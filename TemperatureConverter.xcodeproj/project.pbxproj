@@ -11,7 +11,6 @@
 		25652F8625C9E64800A43A75 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F8525C9E64800A43A75 /* Extension.swift */; };
 		25652F8F25CB0C2B00A43A75 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F8E25CB0C2A00A43A75 /* Functions.swift */; };
 		25652F9825CB0D0500A43A75 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652F9725CB0D0500A43A75 /* main.swift */; };
-		25652FB525CB762500A43A75 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25652FB425CB762500A43A75 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,7 +41,6 @@
 		25652F8E25CB0C2A00A43A75 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		25652F9525CB0D0400A43A75 /* Knitting Gauge Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Knitting Gauge Calculator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25652F9725CB0D0500A43A75 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		25652FB425CB762500A43A75 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +64,10 @@
 		25652F7125C9E61500A43A75 = {
 			isa = PBXGroup;
 			children = (
-				25652FB125CB760800A43A75 /* Distance Converter */,
 				25652F8E25CB0C2A00A43A75 /* Functions.swift */,
 				25652F8525C9E64800A43A75 /* Extension.swift */,
 				25652F7C25C9E61600A43A75 /* TemperatureConverter */,
-				25652F9625CB0D0500A43A75 /* Knitting Gauge Converter */,
+				25652F9625CB0D0500A43A75 /* KnittingGaugeConverter */,
 				25652F7B25C9E61600A43A75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,20 +89,12 @@
 			path = TemperatureConverter;
 			sourceTree = "<group>";
 		};
-		25652F9625CB0D0500A43A75 /* Knitting Gauge Converter */ = {
+		25652F9625CB0D0500A43A75 /* KnittingGaugeConverter */ = {
 			isa = PBXGroup;
 			children = (
 				25652F9725CB0D0500A43A75 /* main.swift */,
 			);
-			path = "Knitting Gauge Converter";
-			sourceTree = "<group>";
-		};
-		25652FB125CB760800A43A75 /* Distance Converter */ = {
-			isa = PBXGroup;
-			children = (
-				25652FB425CB762500A43A75 /* main.swift */,
-			);
-			path = "Distance Converter";
+			path = KnittingGaugeConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +177,6 @@
 			files = (
 				25652F7E25C9E61600A43A75 /* main.swift in Sources */,
 				25652F8625C9E64800A43A75 /* Extension.swift in Sources */,
-				25652FB525CB762500A43A75 /* main.swift in Sources */,
 				25652F8F25CB0C2B00A43A75 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
