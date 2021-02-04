@@ -8,12 +8,13 @@
 import Foundation
 var CMWidth = 0.0
 var CMLength = 0.0
-convertedLength = 0.0
-convertedWidth = 0.0
+var convertedLength = 0.0
+var convertedWidth = 0.0
 
 print("Knitting Gauge Converter")
 print("========================")
 print("Please knit a square or rectangular gauge swatch using the same yarn and needle size you will be using for your project")
+print("If you plan to wash your finished project, wash your gauge swatch before measuring")
 print("========================")
 let swatchStitchWidth = Double.collectInput(withPrompt: "How many stitches wide is your gauge swatch? ", minimum: 0, maximum: nil)
 let swatchStitchLength = Double.collectInput(withPrompt: "How many rows long is your gauge swatch? ", minimum: 0, maximum: nil)
@@ -70,3 +71,12 @@ case "3": convertedWidth = swatchWidth
 case "4": convertedWidth = centimetersToMillimeters(startingDistance: CMWidth)
 default:
     break}
+
+let widthDensity = swatchStitchWidth/convertedWidth
+let lengthDensity = swatchStitchLength/convertedLength
+
+let requiredLength = finalLength * lengthDensity
+let requiredWidth = finalWidth * widthDensity
+
+print("========================")
+print("To achieve your desired dimensions, your project needs to be \(requiredWidth) stitches wide and \(requiredLength) rows long!")
